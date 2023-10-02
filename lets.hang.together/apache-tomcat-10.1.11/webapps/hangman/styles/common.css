@@ -1,0 +1,226 @@
+@font-face {
+    font-family: Oswald;
+    src: url("../utilities/fonts/Oswald-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: BungeeSpice;
+    src: url("../utilities/fonts/BungeeSpice-Regular.ttf");
+}
+
+@font-face {
+    font-family: Oswald-Medium;
+    src: url("../utilities/fonts/Oswald-Medium.ttf");
+}
+
+@font-face {
+    font-family: Bunge-Regular;
+    src: url("../utilities/fonts/Bungee-Regular.ttf");
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("../utilities/images/bg.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Ensures the background doesn't scroll with content */
+}
+
+.overlay-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Change the alpha value (0.5) to control the transparency */
+    z-index: 1; /* Ensure the overlay appears above other content */
+}
+
+.label{
+    font-family: "BungeeSpice";
+    font-size: 64px;
+    margin-bottom: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-container{
+    font-family: Oswald;
+    width: 30%;
+    padding: 20px;
+    margin: auto;
+    background: linear-gradient(135deg, rgba(242, 167, 0, 0.8), rgba(205, 24, 0, 0.5));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-label{
+    font-family: Oswald-Medium;
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.form{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-field{
+    height: 50px;
+    padding-left: 10px;
+    width: 100%;
+    border-radius: 10px;
+    background-color: beige;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.input-field::placeholder{
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 18px;
+    background-color: beige;
+}
+
+.input-field:focus{
+    background-color: beige;
+}
+
+.link-registration{
+    letter-spacing: 1px;
+    color: beige;
+}
+
+.submit-button {
+    width: 75%;
+    height: 50px;
+    background-color: rgba(22, 83, 188, 0.9);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    color: beige;
+    font-size: 24px;
+    font-family: Oswald-Medium;
+    border-radius: 10px;
+    transition: box-shadow 0.2s, background-color 0.2s;
+    cursor: pointer;
+    letter-spacing: 2px;
+}
+
+.submit-button:hover {
+    background-color: rgba(22, 83, 188, 0.9);
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 4px 8px, rgba(0, 0, 0, 0.4) 0px 10px 20px -5px, rgba(0, 0, 0, 0.3) 0px -5px 0px inset;
+    cursor: pointer;
+    font-family: Oswald-Medium;
+}
+
+.link-registration{
+    margin-top: 20px !important;
+    margin-bottom: 20px;
+}
+
+/* modali */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border-radius: 20px;
+    font-size: 20px;
+    text-align: center;
+    width: 25%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.blue-container{
+    width: 100%;
+    height: 7%;
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(0, 102, 219, 0.3);
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 8px 6px 8px rgba(0, 0, 0, 0.5);
+}
+
+.blue-container>div{
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+button>img{
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    color: white;
+}
+
+.btn-settings {
+    color: black;
+    font-family: Bunge-Regular;
+    letter-spacing: 1px;
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-settings:hover {
+    transform: scale(1.05);
+}
+
+.header-container{
+    margin-bottom: 0px !important;
+    height: 7%;
+}
+
+/* animations */
+.scale{
+    transition: .15s ease-in-out 0s;
+}
+.scale:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}

@@ -1,0 +1,8 @@
+Postoje dve vrste naloga (user i admin). 
+
+Nekoliko naloga za korisnike: 
+marko.markovic  -->   marko
+nemanja.vidic  -->  nemanja
+
+Nalog za admina: 
+admin  -->  admin
